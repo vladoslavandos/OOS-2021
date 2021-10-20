@@ -1,0 +1,25 @@
+  228  ls -l /dev/sda{,[123]}
+  229  cat /proc/diskstats
+  230  lsblk --list | cut -f1
+  231  lsblk --list | cut -f2
+  232  lsblk --list | cut -f1,2
+  233  cat /proc/devices
+  234  dd if=/dev/zero of=./fs.img bs=1M count=10
+  235  losetup --find --show ./fs.img
+  236  root
+  237  su
+   64  dd if=/dev/zero of=./fs.img bs=1M count=10
+   65  losetup --find --show ./fs.img
+   66  losetup --list
+   67  mkfs -t ext4 /dev/loop0
+   68  blkid /dev/loop0
+   69  mount /dev/loop0 /mnt
+   70  mount | grep /mnt
+   71  df -h /mnt
+   72  df -hi /mnt
+   73  umount /dev/loop0
+   74  tune2fs -l /dev/loop0
+   75  losetup --detach /dev/loop0
+   76  losetup --list
+   77  ls -l
+   78  history > lab6.txt
