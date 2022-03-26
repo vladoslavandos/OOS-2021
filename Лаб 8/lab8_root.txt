@@ -1,0 +1,143 @@
+    1  yum update kernel*
+    2  reboot
+    3  ls
+    4  cat anaconda-ks.cfg 
+    5  yum install epel-release
+    6  yum install epel-release.noarch 
+    7  yum install kernel-devel kernel-headers gcc make dkms perl bzip2
+    8  exit
+    9  mkdir /media/VBoxLinuxAdditionals
+   10  mount - r /dev/cdrom/media/VBoxLinuxAdditionals
+   11  dnf install epel-release
+   12  exit
+   13  yum install epel-release
+   14  yum install kernel-devel kernel-headers gcc make dkms perl bzip2
+   15  mkdir /media/VBoxLinuxAdditionals
+   16  mount - r /dev/cdrom/media/VBoxLinuxAdditionals
+   17  mount -r /dev/cdrom /media/VBoxLinuxAdditionals
+   18  KERN_DIR=/usr/src/kernels/uname -r
+   19  KERN_DIR=/usr/src/kernels/uname-r
+   20  export KERN_DIR
+   21  cd /media/VBoxLinuxAdditionals
+   22  ./VBoxLinuxAdditions.run 
+   23  exit
+   24  yum install epel-release
+   25  yum install dnf
+   26  dnf --version
+   27  dnf repolist
+   28  dnf repolist all
+   29  dnf search nano
+   30  dnf provides /bin/bash
+   31  dnf update sustemd
+   32  dnf update systemd
+   33  dnf autoremove
+   34  dnf clean all
+   35  dnf install epel-release
+   36  rpm -q epel-release
+   37  dnf install gcc make bzip2 perl kernel-devel kernel-headers dkms
+   38  rpm -q kernel-devel
+   39  uname -r
+   40  dnf update kernel-*
+   41  mkdir -p /mnt/cdrom
+   42  mount /dev/cdrom /mnt/cdrom
+   43  cd /mnt/cdrom
+   44  ./VBoxLinuxAdditions.run 
+   45  reboot
+   46  yum install git
+   47  exit
+   48  id
+   49  whoami
+   50  exit
+   51  chmod g+r file
+   52  exit
+   53  chown g+r root:root file
+   54  chown g+r root file
+   55  chown root g+r  file
+   56  chown root g+r file
+   57  ls
+   58  chown root g+r /file
+   59  chown root g+r ./file
+   60  chown root ./file
+   61  exit
+   62  yum install dpkg
+   63  exit
+   64  dd if=/dev/zero of=./fs.img bs=1M count=10
+   65  losetup --find --show ./fs.img
+   66  losetup --list
+   67  mkfs -t ext4 /dev/loop0
+   68  blkid /dev/loop0
+   69  mount /dev/loop0 /mnt
+   70  mount | grep /mnt
+   71  df -h /mnt
+   72  df -hi /mnt
+   73  umount /dev/loop0
+   74  tune2fs -l /dev/loop0
+   75  losetup --detach /dev/loop0
+   76  losetup --list
+   77  ls -l
+   78  history > lab6.txt
+   79  exit
+   80  yum install git
+   81  yum install -y git
+   82  exit
+   83  cp 3.1_echo.sh /bin
+   84  exit
+   85  vi /etc/pam.d/su
+   86  q
+   87  exit
+   88  vi /etc/pam.d/su
+   89  exit
+   90  vi /etc/pam.d/su
+   91  exit
+   92  vi /etc/pam.d/su
+   93  exit
+   94  wxit
+   95  exit
+   96  vi /etc/pam.d/su
+   97  users
+   98  cat /etc/group
+   99  lid -g wheel
+  100  adduser user1
+  101  usermod -aG wheel user1 wheel
+  102  users
+  103  adduser user1
+  104  passwd user1
+  105  users
+  106  usermod -aG wheel user1 wheel
+  107  lid -g wheel
+  108  exit
+  109  usermod -a -G wheel user1
+  110  lid -g wheel
+  111  usermod -a -G wheel vlados_korch
+  112  lid -g wheel
+  113  exit
+  114  vi /etc/pam.d/su
+  115  exit
+  116  vi /etc/pam.d/su
+  117  exit
+  118  vi /etc/pam.d/su
+  119  cd /etc/securetty
+  120  cd /etc
+  121  cat securetty
+  122  vi /pam.d/login
+  123  cd
+  124  vi /etc/pam.d/login
+  125  cat /etc/securetty 
+  126  cp ~/etc/securety~/Документы/lab8
+  127  cp ~/etc/securety ~/Документы/lab8
+  128  cp ~/etc/securetty ~/Документы/lab8
+  129  exit
+  130  vi /etc/security/pwquality.conf 
+  131  vi /etc/pam.d/system-auth
+  132  exit
+  133  vi /etc/pam.d/system-auth
+  134  vi /etc/security/pwquality.conf 
+  135  man pam_limits
+  136  vi /etc/security/limits.conf 
+  137  exit
+  138  vi /etc/security/limits.conf 
+  139  exit
+  140  vi /etc/pam.d/check
+  141  cd
+  142  exit
+  143  history > lab8_root.txt

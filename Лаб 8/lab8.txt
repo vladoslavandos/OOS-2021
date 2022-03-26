@@ -1,0 +1,597 @@
+    1  sudo apt update
+    2  sudo apt-get update
+    3  man
+    4  1
+    5  sudo
+    6  apt update
+    7  update
+    8  su -
+    9  exit
+   10  mkdir /media/VBoxLinuxAdditions
+   11  su-
+   12  su -
+   13  sudo dnf install epel-release
+   14  su -
+   15  sudo dnf install epel-release
+   16  exit
+   17  sudo dnf install epel-release
+   18  yum install epel-release
+   19  su -
+   20  exit
+   21  yum install epel-release
+   22  su -
+   23  cd /mnt/cdrom
+   24  ls
+   25  cd
+   26  find gcc
+   27  cd /Документы
+   28  find hello.c
+   29  cd /Documents
+   30  cd /Документы
+   31  cd Документы/
+   32  ls
+   33  gcc hello.c 
+   34  ls
+   35  ./a.out 
+   36  exit
+   37  echo "it's hard to do that"
+   38  echo 'it'\''s hard to do that'
+   39  echo '"Пример текста в кавычках"'
+   40  echo '# эта строка не является комментарием'
+   41  whoami
+   42  whoaim
+   43  whoami
+   44  echo "Hello world"
+   45  date
+   46  cal
+   47  man cal
+   48  cal -3
+   49  history
+   50  clear
+   51  history
+   52  pwd
+   53  cd /
+   54  ls
+   55  cd bin
+   56  cd /
+   57  bin
+   58  cd ..
+   59  pwd
+   60  ls
+   61  ls /var
+   62  cd ~
+   63  ls
+   64  cd Загрузки/
+   65  ls
+   66  cd
+   67  cd Документы/
+   68  ls
+   69  cd
+   70  ls -l
+   71  cd
+   72  mkdir fruits
+   73  cd /
+   74  mkdir ~/animals
+   75  touch /tmp/temp
+   76  cd
+   77  cd fruits/
+   78  mkdir apple banana pineapple lion
+   79  ls
+   80  cd
+   81  ls
+   82  cd animals/
+   83  touch cat.txt dog.txt elephant.txt
+   84  ls
+   85  cd
+   86  cd fruits/
+   87  ls -i
+   88  stat apple/
+   89  stat banana/
+   90  touch apple
+   91  stat apple/
+   92  ls
+   93  touch apple banana pineapple lion
+   94  stat apple/
+   95  ls
+   96  clean history
+   97  clear history
+   98  history
+   99  clear
+  100  history
+  101  rm history
+  102  ls
+  103  rm animals
+  104  ls
+  105  reboot
+  106  su
+  107  cat file
+  108  su
+  109  cat file
+  110  history
+  111  cd
+  112  mkdir test
+  113  cd test
+  114  touch file
+  115  chmod 000 file
+  116  ls -l
+  117  echo "тест" > file
+  118  cat file
+  119  chmod -w- file
+  120  ll
+  121  chmod ugo-w- file
+  122  ll
+  123  chmod ugo+w+ file
+  124  ll
+  125  chmod ugo+w- file
+  126  ll
+  127  chmod 000 file
+  128  ll
+  129  chmod u+w- file
+  130  ll
+  131  cd
+  132  cd /te
+  133  cd test
+  134  echo "тестtest" > file
+  135  cat file
+  136  chmod g+r- file
+  137  ll
+  138  chmod u+r- file
+  139  ls -l
+  140  cat file
+  141  mkdir dir
+  142  cd dir/
+  143  touch new_file
+  144  ll
+  145  echo "file 2" > new_file 
+  146  cat new_file 
+  147  chmod ugo-x dir/
+  148  cd
+  149  cd test/
+  150  chmod ugo-x dir/
+  151  cat dir/new_file 
+  152  rm dir/new_file 
+  153  chown root:root ./dir/
+  154  chgrp root file
+  155  chown root ./dir/
+  156  umask 0077 && touch file1 && ll file1
+  157  umask 0000 && touch file2 && ll file2
+  158  cd ~
+  159  cd /test
+  160  ls
+  161  cd test/
+  162  la -l
+  163  ls -l
+  164  ls -lR
+  165  history
+  166  history > ~/lab2_history.txt
+  167  cd
+  168  ls
+  169  exit
+  170  echo "# OOS-2021" >> README.md
+  171  git init
+  172  git add README.md
+  173  git commit -m "first commit"
+  174  git remote add origin git@github.com:vladoslavandos/OOS-2021.git
+  175  ды
+  176  ls
+  177  git branch -M main
+  178  git push -u origin main
+  179  cd Документы/
+  180  cd OOS-2021/
+  181  git init
+  182  git add .
+  183  git commit -m "Очередное изменение проекта" -a
+  184  git remote add origin https://github.com/vladoslavandos/OOS-2021.git
+  185  git push origin master
+  186  ls
+  187  cd ..
+  188  git clone https://github.com/vladoslavandos/OOS-2021.git 
+  189  git remote add origin https://github.com/vladoslavandos/OOS-2021.git
+  190  cd OOS-2021/
+  191  git remote add origin https://github.com/vladoslavandos/OOS-2021.git
+  192  git push origin master 
+  193  cd
+  194  cd Музыка/
+  195  ls
+  196  ды
+  197  ls
+  198  cd
+  199  cd З
+  200  cd Загрузки/
+  201  ls
+  202  sudo dpkg -i GitHubDesktop-linux-2.9.3-linux2.deb 
+  203  sudo apt-get install gdebi
+  204  yum install dpkg
+  205  root
+  206  cd
+  207  cd /
+  208  su
+  209  cd ~
+  210  cd Загрузки/
+  211  sudo dpkg -i GitHubDesktop-linux-2.9.3-linux2.deb 
+  212  sudo dpkg -i GitHubDesktop-linux-2.9.3-linux2.deb --fix-broken
+  213  sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.8.1-linux2/GitHubDesktop-linux-2.8.1-linux2.deb
+  214  sudo dpkg -i GitHubDesktop-linux-2.8.1-linux2.deb 
+  215  rm GitHubDesktop-linux-2.9.3-linux2.deb 
+  216  ls
+  217  sudo dpkg -i GitHubDesktop-linux-2.8.1-linux2.deb 
+  218  ls -l /dev/sda{,[123]}
+  219  lsblk --list
+  220  cat /proc/diskstats
+  221  man dd
+  222  ls -l /dev/sda{[123]}
+  223  ls -l /dev/sda{,[123]}
+  224  ls -l /dev/sda{a,[123]}
+  225  ls -l /dev/sda{1,[123]}
+  226  ls -l /dev/sda{,[123]}
+  227  ls -l /dev/sda
+  228  ls -l /dev/sda{,[123]}
+  229  cat /proc/diskstats
+  230  lsblk --list | cut -f1
+  231  lsblk --list | cut -f2
+  232  lsblk --list | cut -f1,2
+  233  cat /proc/devices
+  234  dd if=/dev/zero of=./fs.img bs=1M count=10
+  235  losetup --find --show ./fs.img
+  236  root
+  237  su
+  238  exit
+  239  history > laba6.txt
+  240  ls
+  241  mkdir ~/scripts
+  242  ls
+  243  cd scripts/
+  244  su
+  245  git init
+  246  touch README.md
+  247  vim README.md 
+  248  cat README.md 
+  249  git config --global vladoslavandos
+  250  touch create_shred.sh
+  251  ls
+  252  rm create_shred.sh 
+  253  ls
+  254  touch make_shared.sh
+  255  vim make_shared.sh 
+  256  bash make_shared.sh 
+  257  touch hello.sh
+  258  vim hello.sh 
+  259  bash hello.sh
+  260  chmod +x hello.sh
+  261  ./hello.sh 
+  262  cd
+  263  ls
+  264  cd scripts/
+  265  touch count_of_txt.sh
+  266  vim count_of_txt.sh 
+  267  bash count_of_txt.sh 
+  268  vim count_of_txt.sh 
+  269  bash count_of_txt.sh 
+  270  touch sorted_env.sh
+  271  vim sorted_env.sh 
+  272  bash sorted_env.sh 
+  273  touch good_morning.sh
+  274  vim good_morning.sh 
+  275  bash good_morning.sh 
+  276  man find
+  277  find /usr -size +20M
+  278  touch find_+20M.sh
+  279  vim find_+20M.sh 
+  280  bash find_+20M.sh 
+  281  touch count_files_homedir.sh
+  282  viim count_
+  283  viim count_files_homedir.sh 
+  284  vim count_files_homedir.sh 
+  285  bash count_files_homedir.sh 
+  286  vim count_files_homedir.sh 
+  287  bash count_files_homedir.sh 
+  288  vim count_files_homedir.sh 
+  289  bash count_files_homedir.sh 
+  290  vim count_files_homedir.sh 
+  291  bash count_files_homedir.sh 
+  292  touch sys_info.sh
+  293  vim sys_info.sh 
+  294  bash sys_info.sh 
+  295  touch count_process.sh
+  296  vin count_process.sh 
+  297  vim count_process.sh 
+  298  bash count_process.sh 
+  299  vim count_process.sh 
+  300  bash count_process.sh 
+  301  cat count_process.sh 
+  302  touch most_usage_process.sh
+  303  vim most_usage_process.sh 
+  304  bash most_usage_process.sh 
+  305  touch most_usage.sh
+  306  vim most_usage.sh 
+  307  bash most_usage.sh 
+  308  touch homesorted_by_size.sh
+  309  vim homesorted_by_size.sh 
+  310  bash homesorted_by_size.sh 
+  311  vim homesorted_by_size.sh 
+  312  bash homesorted_by_size.sh 
+  313  vim homesorted_by_size.sh 
+  314  bash homesorted_by_size.sh 
+  315  ls -a
+  316  ls
+  317  ls -l
+  318  touch super_ls.sh
+  319  vim super_ls.sh 
+  320  bash super_ls.sh 
+  321  cd
+  322  bash super.sh
+  323  cd scripts/
+  324  cp ~/scripts/super_ls.sh ~/bin
+  325  cd 
+  326  cd /dev
+  327  cd
+  328  cd bin
+  329  cd /bin/
+  330  bash super.sh
+  331  ls
+  332  cd
+  333  exit
+  334  cd scripts
+  335  cd
+  336  touch numbers.txt
+  337  seq 10000 >> numbers.txt 
+  338  cat numbers.txt 
+  339  clear
+  340  touch users.txt
+  341  cut -d: /etc/passwd
+  342  cut -d: -f /etc/passwd
+  343  awk -F: '{ print $1}' /etc/passwd
+  344  awk -F: '{ print $1}' /etc/passwd >> users.txt 
+  345  cat users.txt 
+  346  touch bash.txt
+  347  od /bin/bash
+  348  od /bin/bash >> bash.txt 
+  349  cat bash.txt 
+  350  clear
+  351  touch services.txt
+  352  cp ~/etc/services  ~/services.txt 
+  353  cd scripts
+  354  cd
+  355  cd/etc
+  356  cd /etc
+  357  ls
+  358  cat services
+  359  cp services ~services.txt
+  360  cd scripts
+  361  touch 2.1_logger.sh
+  362  vim 2.1_logger.sh 
+  363  bash 2.1_logger.sh > /dev/null 
+  364  bash 2.1_logger.sh 2> /dev/null 
+  365  bash 2.1_logger.sh > /dev/null 
+  366  touch 2.2_logger.sh
+  367  vim 2.2_logger.sh 
+  368  bash 2.2_logger.sh 
+  369  touch 2.3_bashf.sh
+  370  vim 2.3
+  371  rm 2.3
+  372  ls
+  373  vim 2.3_bashf.sh 
+  374  bash 2.3_bashf.sh 
+  375  vim 2.3_bashf.sh 
+  376  bash 2.3_bashf.sh 
+  377  cd
+  378  cd /tmp/nozeros
+  379  cd tmp
+  380  cd /tmp
+  381  cat nozeros 
+  382  cat zeros 
+  383  cd
+  384  cd scripts/
+  385  bash 2.3_bashf.sh 
+  386  touch 2.4_error.sh
+  387  vim 2.4_error.sh 
+  388  bash 2.4_error.sh 
+  389  'ls/
+  390  fkalsjajdbin dajd;askapodk;
+  391  jdfakljdasjasdjfls
+  392  jfkasldbinfbdsjhbsd
+  393  binjflkas
+  394  inbjdfsal
+  395  q
+  396  'ls/
+  397  fkalsjajdbin dajd;askapodk;
+  398  jdfakljdasjasdjfls
+  399  jfkasldbinfbdsjhbsd
+  400  binjflkas
+  401  inbjdfsal
+  402  q
+  403  bash 2.4_error.sh 
+  404  ldjjljsak
+  405  kdfsjlk
+  406  binfjsmokfas
+  407  ksk;asls
+  408  lsacks;as
+  409  bash 2.4_error.sh 
+  410  3
+  411  cd
+  412  cd /tmp
+  413  touch 2.5.txt
+  414  rm 2.5.txt 
+  415  cd
+  416  cd scripts/
+  417  touch 2.5_txt_info.sh
+  418  vim 2.5_txt_info.sh 
+  419  bash 2.5_txt_info.sh 
+  420  exit
+  421  ls
+  422  cd scripts/
+  423  ls
+  424  touch 3.1_echo
+  425  vim 3.1_echo 
+  426  rm 3.1_echo 
+  427  touch 3.1_echo.sh
+  428  rm 3.1_echo.sh 
+  429  touch 3.1_echo.sh
+  430  vim 3.1_echo.sh 
+  431  cp 3.1_echo.sh /bin
+  432  su
+  433  cd
+  434  cd /bin
+  435  ls
+  436  cd
+  437  cd scripts/
+  438  touch 3.2.sh
+  439  vim 3.2.sh 
+  440  bash 3.2.sh 
+  441  bash 3.1_echo.sh 
+  442  vim 3.3_test.sh
+  443  bash 3.3_test.sh 
+  444  bash 3.3_test.sh 3.1_echo.sh 
+  445  exit
+  446  cd scripts/
+  447  ls
+  448  vim super_ls.sh 
+  449  vim 3.3_super_ls.sh
+  450  ls
+  451  vim 3.3_super_ls.sh
+  452  rm 3.3_super_ls.sh 
+  453  touch 3.4_super_ls.sh
+  454  vim 3.4_super_ls.sh
+  455  ls
+  456  bash 3.4_super_ls.sh
+  457  bash 3.4_super_ls.sh scripts
+  458  bash 3.4_super_ls.sh /scripts
+  459  bash 3.4_super_ls.sh /home/
+  460  bash 3.4_super_ls.sh /home
+  461  bash 3.4_super_ls.sh /home/vlados_korch/Документы/
+  462  touch 3.5_grep.sh
+  463  vim 3.5_grep.sh 
+  464  bash 3.5_grep.sh 358 numbers.txt 1
+  465  touch 3.6_userinfo.sh
+  466  vim 3.6_userinfo.sh 
+  467  bash 3.6_userinfo.sh 
+  468  ps -e
+  469  ps -ef
+  470  ps -eF
+  471  ps -ely
+  472  ps ax
+  473  ps axu
+  474  ps aux
+  475  ps -ejH
+  476  ps axjf
+  477  ps -eLf
+  478  ps axms
+  479  ps -eo euser, ruser, suser, fuser, f, comm, label
+  480  ps -eo euser,ruser,suser,fuser,f,comm,label
+  481  ps axZ
+  482  ps -eM
+  483  ps -U root -u root u
+  484  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+  485  ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+  486  ps -Ao pid,tt,user,fname,tmout,f,wchan
+  487  ps -C systemd -o pid=
+  488  ps -q номер -o comm=
+  489  ps -q 1 -o comm=
+  490  ps -q 2 -o comm=
+  491    $ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+  492  ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+  493  ps -e
+  494  ps -ef
+  495  ps -eF
+  496  ps -ely
+  497  ps ax
+  498  ps axu
+  499  ps aux
+  500  ps -ejH
+  501  ps axjf
+  502  ps -eLf
+  503  ps axms
+  504  ps -eo euser, ruser, suser, fuser, f, comm, label
+  505  ps -eo euser,ruser,suser,fuser,f,comm,label
+  506  ps axZ
+  507  ps -eM
+  508  ps -U root -u root u
+  509  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+  510  ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+  511  ps -Ao pid,tt,user,fname,tmout,f,wchan
+  512  ps -C systemd -o pid=
+  513  ps -q номер -o comm=
+  514  ps -q 1 -o comm=
+  515  ps -q 2 -o comm=
+  516    $ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+  517  ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+  518  jobs
+  519  ps j
+  520  bg
+  521  jobs
+  522  ps j
+  523  ( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done )
+  524  tail -f ~/test.out
+  525  jobs
+  526  fg 1
+  527  jobs
+  528  cd Документы/
+  529  cd 2
+  530  ls -l
+  531  vim task3.c
+  532  gcc -Wall task3.c -o task3
+  533  vim task3.c 
+  534  gcc task3.c -o task3
+  535  vim task3.c 
+  536  gcc -Wall task3.c -o task3
+  537  vim task3.c 
+  538  gcc -Wall task3.c -o task3
+  539  ./task3
+  540  2
+  541  vim task4.c 
+  542  gcc -Wall task4.c -o task4
+  543  ./task4
+  544  h
+  545  vim task3
+  546  vim task3.c 
+  547  ldd /bin/login | grep pam
+  548  ls -l /lib62/libpam*
+  549  ls -l /lib64/libpam*
+  550  ls -l /lib64/security/
+  551  vi /etc/pam.d/system-auth
+  552  vi /etc/pam.d/su
+  553  root
+  554  su
+  555  su -c "hostname mephi"
+  556  vi /etc/pam.d/su
+  557  su
+  558  ыг vi /etc/pam.d/su
+  559  su vi /etc/pam.d/su
+  560  sudo su vi /etc/pam.d/su
+  561  vi /etc/pam.d/su
+  562  sudo vlado_korch
+  563  su vlados_korch
+  564  sudo vlados_korch
+  565  св /etc/pam.d
+  566  cd /etc/pam.d
+  567  ls -l
+  568  chmod ugo+rwx su
+  569  sudo su -root
+  570  sudo su - root
+  571  cd
+  572  sudo -i
+  573  su
+  574  su - user1
+  575  sudo adduser user2
+  576  sudo passwd user2
+  577  su - user2
+  578  su
+  579  whoami
+  580  su - user2
+  581  su
+  582  su - user2
+  583  su
+  584  su - root
+  585  su - user1
+  586  man pam_pwquality
+  587  su vi /etc/security/pwquality.conf 
+  588  sudo su vi /etc/security/pwquality.conf 
+  589  su
+  590  sudo passwd user2
+  591  su
+  592  sudo - user1
+  593  su - user1
+  594  su
+  595  cd Документы/
+  596  gcc check_user.c -o check_user -lpam -lpam_misc
+  597  history > lab8.txt
