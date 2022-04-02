@@ -1,0 +1,63 @@
+   231  ldd /bin/ls | grep selinux
+   232  ll /etc/selinux/
+   233  ll /etc/selinux/targeted/
+   234  id -Z
+   235  ls -Z /etc/passwd /etc/group /etc/shadow
+   236  ls -Z /etc/login.defs /etc/sudoers
+   237  ls -Z /usr/bin/passwd
+   238  ls -Z /usr/sbin/useradd
+   239  getfattr -n security.selinux /etc/passwd
+   240  ps Zaux
+   241  ls /proc/$$/attr
+   242  ps Z $(pgrep passwd)
+   243  netstat -tnlpZ
+   244  sestatus
+   245  getenforce
+   246  cat /sys/fs/selinux/enforce
+   247  sudo nano /etc/selinux/config
+   248  reboot
+   249  getenforce
+   250  sudo nano /etc/selinux/config
+   251  reboot
+   252  getenforce
+   253  sudo nano /eyc/selinux/config
+   254  reboot
+   255  getenforce
+   256  setenforce 1
+   257  getenforce
+   258  sudo bash -c 'echo 1 > /sys/fs/selinux/enforce'
+   259  getenforce
+   260  cat /boot/config-4.18.0-348.7.1.el8_5.x86_64 | grep CONFIG_SECURITY_SELINUX
+   261  getsebool -a | grep httpd
+   262  seinfo
+   263  seinfo -cfile -x
+   264  seinfo --class | grep file
+   265  seinfo --class file -x
+   266  seinfo --common file -x
+   267  seinfo -cdir -x
+   268  seinfo --class dir -x
+   269  seinfo -cblk_file -x
+   270  seinfo --class blk_file -x
+   271  seinfo -cchr_file -x
+   272  seinfo --class chr_file -x
+   273  seinfo -clnk_file -x
+   274  seinfo --class lnk_file -x
+   275  seinfo -cfifo_file -x
+   276  seinfo --class fifo_file -x
+   277  seinfo -csock_file -x
+   278  seinfo --class sock_file -x
+   279  seinfo -cfilesystem -x
+   280  seinfo --class filesystem -x
+   281  grep 'httpd_.*_t' /etc/selinux/targeted/contexts/files/file_contexts
+   282  semanage fcontext -l
+   283  su -
+   284  sesearch -T -s httpd_t -t var_log_t
+   285  sesearch -T -s httpd_t -t tmp_t
+   286  sesearch --allow --source passwd_t --target shadow_t --class file
+   287  sesearch -A -s passwd_t -t passwd_exec_t -c file
+   288  sesearch -A -s unconfined_t -t passwd_exec_t -c file
+   289  sesearch -A -s unconfined_t -t passwd_t -c process
+   290  sesearch --type_trans -s unconfined_t -t passwd_exec_t
+   291  sudo ausearch -m avc -ts recent
+   292  seinfo | grep -E '(dontaudit|allow)'
+   293  history > lab12.txt
